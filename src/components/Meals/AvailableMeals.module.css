@@ -1,0 +1,42 @@
+.meals {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.meals ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.load {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #383838;
+  letter-spacing: 1rem;
+}
+.error {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: red;
+  letter-spacing: 1rem;
+}
+
+@keyframes meals-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
